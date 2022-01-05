@@ -79,13 +79,7 @@ async function makeAssignmentsInNotion(assignments, notionSecret) {
                 }
             },
             'Place': { type: 'rich_text', rich_text: {} },
-            'Class': {
-                type: 'select', select: {
-                    options: [
-                        { name: "Test" }
-                    ]
-                }
-            },
+            'Class': { type: 'select', select: {} },
             'Do By': { type: 'date', date: {} },
             'Canvas': { type: "url", url: {} }
         }
