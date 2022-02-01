@@ -1,8 +1,5 @@
 const { Client } = require("@notionhq/client")
 
-// const NOTION_SECRET = "secret_syuYSh8gUVX3c1SWN4nEVPcDXv17QAwiWfLUWSXo2KB"
-// const NOTION_SECRET = "secret_wPrBUtbd6opjM8qk7rw4NktiThVh6BaGwbn3cpp94Wz"
-
 function makeAssignmentPage({ due_at, name, html_url, courseTitle }, databaseId) {
     const dateObj = new Date(due_at)
     const justTheDate = `${dateObj.getFullYear()}-${String(dateObj.getMonth() + 1).padStart(2, '0')}-${String(dateObj.getDate()).padStart(2, '0')}`
